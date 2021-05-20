@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="jQuery/jquery-3.5.1.min.js">
+			
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$("button").click(function(){
+					// $("div").animate({
+						// left:'200px',
+						// opacity:'-=0.1',
+						// height:'+=150px',
+						// width:'+=150px'
+						// height:'toggle'
+						
+						// });
+						
+						var div=$("div");
+						// div.animate({height:'300px',opacity:'0.2'},"slow");
+						// div.animate({width:'300px',opacity:'0.7'},"slow");
+						// div.animate({height:'50px',opacity:'0.2'},"slow");
+						// div.animate({width:'50px',opacity:'0.7'},"slow");
+						div.animate({left:'100px'},"slow");
+						div.animate({fontSize:'2em'},"slow");
+						
+						
+						$("p").css("color","red")
+							.slideUp(2000)
+							.slideDown(2000)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<button type="button">开始动画</button>
+		<p>
+			默认情况下，所有的 HTML 元素有一个静态的位置，且是不可移动的。
+			如果需要改变为，我们需要将元素的 position 属性设置为 relative, fixed, 或 absolute!</p>
+		<div id="div" style="width: 50px;height: 50px; background-color: #008000;position: absolute;font-size: 24px;">
+			hello
+		</div>
+	</body>
+</html>
